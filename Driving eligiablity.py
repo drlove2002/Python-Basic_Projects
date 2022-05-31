@@ -1,4 +1,4 @@
-print("Please enter your age \nTo verify your eligibility og Driving licence \n")
+print("Please enter your age \nTo verify your eligibility og Driving license \n")
 age = int(input())
 if 7 < age < 18:
     print("Sorry you are not eligible\n")

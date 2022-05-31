@@ -14,11 +14,11 @@ Game_Options = dict(zip(keys, Options))
 def clear():
     # for windows
     sleep(0.2)
-    if name == 'nt':
-        _ = system('cls')
+    if name == "nt":
+        _ = system("cls")
     # for mac and linux(here, os.name is 'posix')
     else:
-        _ = system('clear')
+        _ = system("clear")
 
 
 def retry():
@@ -62,10 +62,9 @@ while count == 0:
         print(f"[+]Round {count + 1}")
         try:
             # -------------> Genareting a random move for computer
-            random_move = random.choices(
-                values, weights=[33.333, 33.333, 33.333], k=1)
+            random_move = random.choices(values, weights=[33.333, 33.333, 33.333], k=1)
 
-            # -------------> User is chooseing move
+            # -------------> User is choosing move
             for key, value in elements.items():
                 print(f"[+] Press {key} Then ENTER for {value} \n", end="")
             Choice = int(input("=> "))
@@ -73,7 +72,7 @@ while count == 0:
             My_move = elements[Choice]
             print(f"\n[+]Your Move => {My_move}")
 
-            # -------------> Computer is chooseing move
+            # -------------> Computer is choosing move
             Computer_move = random_move[0]
             print(f"[+]Computer's Move => {Computer_move}\n")
 
